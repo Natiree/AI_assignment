@@ -1,9 +1,7 @@
 from constraint import Problem
 
-# Create problem
 problem = Problem()
 
-# Nairobi sub-counties
 subcounties = [
     "Westlands",
     "Dagoretti North",
@@ -24,14 +22,11 @@ subcounties = [
     "Mathare"
 ]
 
-# Least possible colors
 colors = ["Red", "Green", "Blue"]
 
-# Add variables
 for area in subcounties:
     problem.addVariable(area, colors)
 
-# Constraints (adjacent regions must differ)
 
 adjacent = [
     ("Westlands", "Dagoretti North"),
@@ -56,17 +51,14 @@ adjacent = [
     ("Ruaraka", "Embakasi North")
 ]
 
-# Apply constraints
 for area1, area2 in adjacent:
     problem.addConstraint(
         lambda a, b: a != b,
         (area1, area2)
     )
 
-# Get solution
 solution = problem.getSolution()
 
-# Display results
 print("Nairobi Sub-County Map Coloring")
 print("--------------------------------")
 
