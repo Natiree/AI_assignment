@@ -1,6 +1,5 @@
 from collections import deque
 
-# Simple graph
 graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
