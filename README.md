@@ -34,5 +34,5 @@ python filename.py
 Prolog files:
 Open SWI-Prolog and load:
 [filename].
-
+ 
 
