@@ -24,4 +24,4 @@ def dfs(node, goal, path):
 
     return False
 
-dfs('A', 'F', [])
+dfs('A', 'F', []) 
