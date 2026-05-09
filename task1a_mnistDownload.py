@@ -6,4 +6,4 @@ from tensorflow.keras.datasets import mnist
 print("MNIST dataset downloaded successfully.")
 
 print("Training data shape:", x_train.shape)
-print("Testing data shape:", x_test.shape)
+print("Testing data shape:", x_test.shape) 
